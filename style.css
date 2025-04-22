@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+body{
+    background-color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul{
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+    gap: 50px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    gap: 5px;
+}
+
+.brand img{
+    height: 50px;
+
+}
+
+.container{
+    min-height: 75vh;
+    /* height: 40%; */
+    background-color: gray;
+    color: white;
+    display: flex;
+    width: 80%;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.bottom{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    /* position: sticky; */
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: absolute;
+    font-weight: bolder;
+    
+}
+
+#myProgress{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    gap: 2vw;
+    font-size: small;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+
+.songItemContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.songItem{
+    background-color: white;
+    height: 40px;
+    width: 330px;
+    padding:0 25px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight:1000;
+    border-radius: 20px;
+}
+
+.songItem img{
+    height: 90%;
+    width: 14%;
+    object-fit: cover;
+    border-radius: 45px;
+}
+
+.timestamp i{
+    padding: auto 5px;
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    width: 80%;
+    left: 10vw;
+    top: 40px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.timestamp{
+    display: flex;
+    gap: 5px;
+}
+
+#songName{
+    width: 15vw;
+}
+
+
